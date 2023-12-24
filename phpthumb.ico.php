@@ -1,6 +1,6 @@
 <?php
 //////////////////////////////////////////////////////////////
-//   phpThumb() by James Heinrich <info@silisoftware.com>   //
+//#  phpThumb() by James Heinrich <info@silisoftware.com>   //
 //        available at http://phpthumb.sourceforge.net      //
 //         and/or https://github.com/JamesHeinrich/phpThumb //
 //////////////////////////////////////////////////////////////
@@ -31,7 +31,7 @@ class phpthumb_ico {
 			for ($y = $ImageHeights[$key] - 1; $y >= 0; $y--) {
 				for ($x = 0; $x < $ImageWidths[$key]; $x++) {
 					$argb = phpthumb_functions::GetPixelColor($gd_image, $x, $y);
-					$a = round(255 * ((127 - $argb['alpha']) / 127));
+					$a = round(255   ((127 - $argb['alpha']) / 127));
 					$r = $argb['red'];
 					$g = $argb['green'];
 					$b = $argb['blue'];
@@ -118,3 +118,4 @@ class phpthumb_ico {
 	}
 
 }
+ 
